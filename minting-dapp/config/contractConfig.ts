@@ -1,5 +1,5 @@
 const ContractConfig = {
-  contractAddress: '0x0A1eC646E23A14d44aA28065ff407193F1ea5cA5', // Replace with your actual contract address
+  contractAddress: '0x9378541D48775FdC90DC75EB49B8cb7496Ec2901', // Replace with your actual contract address
   tokenName: 'Fun 3.0', // This will be Page Name update as you wish 
   networkConfig: {
     mainnet: {
@@ -11,11 +11,11 @@ const ContractConfig = {
       },
     },
     testnet: {
-      chainId: 4, // Rinkeby Testnet chain ID
+      chainId: 11155111, // Sepolia Testnet chain ID
       blockExplorer: {
         name: 'Etherscan',
-        generateContractUrl: (address: string) => `https://rinkeby.etherscan.io/address/${address}`,
-        generateTransactionUrl: (txHash: string) => `https://rinkeby.etherscan.io/tx/${txHash}`,
+        generateContractUrl: (address: string) => `https://sepolia.etherscan.io/address/${address}`,
+        generateTransactionUrl: (txHash: string) => `https://sepolia.etherscan.io/tx/${txHash}`,
       },
     },
   },

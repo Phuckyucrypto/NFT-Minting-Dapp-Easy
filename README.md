@@ -2,7 +2,7 @@
 
 ---
 
-**WARNING! This DApp is currently connected to the Mainnet Test Contract. DO NOT MINT!**
+**WARNING! This Dapp is configured to run on MainNet and Sepolia Dapp will check for contract on each network to ensure no errors:**
 
 ---
 
@@ -44,6 +44,9 @@ Before running the DApp, you need to update the configuration files with the act
 2. **DO NOT EDIT `abi.json`:**
    - The `abi.json` file is pre-configured for the Bets.io ETH custom contract. Editing this file may cause issues with minting and deploying the DApp.
 
+3. **UpdateWhiteList `config/whitelist.json` :**
+   - To ensure the Merkle tree and leafs are sorted correctly to pass proof, you must update the config/whitelist.json with the same exact whitelist JSON file used when the contract was deployed. Failure to do so will result in incorrect Merkle proofs and failed transactions.
+
 ---
 
 ### Testing
@@ -80,11 +83,13 @@ Make sure to double-check all configurations before deployment.
 
 ### Important Notes
 
-- This DApp is connected to a Mainnet Test Contract. DO NOT MINT while connected to this contract.
 - Ensure that all configurations in the `config/contractConfig.ts` are correctly updated to reflect the actual deployed contract details before deployment.
 - Any modifications to `abi.json` may result in minting and deployment issues. Avoid editing this file unless absolutely necessary and contract is updated to reflect changes in abi as the DApp reads data directly from contract along with interacting with it.
+- # IMPORTANT update whitelist.json with WL wallets directly from Contract Deploy !
 
 ---
 
 By following these instructions, you can set up, test, and deploy the Minting DApp successfully. If you encounter any issues, please review the configuration steps or consult with the development team for further assistance.
+
+### CONTRACT FOR THIS DAPP IS - https://github.com/Phuckyucrypto/bets (Private Repo)
 ```
