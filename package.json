@@ -1,0 +1,14 @@
+{
+  "name": "@phuckyucrypto/bets-minting-dapp",
+  "description": "Minting Dapp for Bets.io",
+  "author": "Miklo <phuckyucrypto@gmail.com>",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phuckyucrypto/bets-minting-dapp.git"
+  },
+  "scripts": {
+    "build-dapp": "cd ../minting-dapp; yarn; yarn build"
+  }
+}
